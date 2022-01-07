@@ -1,0 +1,86 @@
+extends .././layout
+ 
+block page-header
+    h1(style="font-family:'Times New Roman'") Sunset Peak
+ 
+block content 
+    p 
+    a(href='/database') Database Home Page	
+    |  |   
+    a(href='/lantau_island') Lantau Island
+    p 
+    img(src='image/lantau_island/sunset_peak//003.jpg' alt='' width="50%" height="50%")
+    p 
+    |Sunset Peak is the second highest mountain on Lantau Island, just behind Lautau Peak. At 800 meters above sea level, a couple dozen of stone shacks scatter over the highland between Sunset Peak and Yi Tung Shan.  
+    |These shacks, also known as the Lantau Mountain Camp, can be traced back to almost 90 years ago. They were built by foreign missionaries as bungalows in the 20s. At present some of the shacks are managed by organizations and some others are privately owned.
+    |Sunset Peak is accessible by following Lantau Trail Section Two, either from Pak Kung Au or Nam Shan. For a longer trek, one may take the uphill path at Pak Mong which leads to the peak via Lin Fa Shan.
+    p
+    |The trail begins at the pavilion located at Pak Kung Au. Follow the signpost of Lantau Trail and climb uphill (The hillside path to the right is the South Lantau Trail which leads to Nam Shan) to the Lautau Mountain Camp.
+    | Head to Sheung Tung Au and then keep right following the Lautau Trail Section 2 in reverse direction and drop to South Lantau Road at Nam Shan. 
+    p 
+    img(src='image/lantau_island/sunset_peak/001.jpg' alt='' width="30%" height="30%")
+    img(src='image/lantau_island/sunset_peak//002.jpg' alt='' width="30%" height="30%")
+    img(src='image/lantau_island/sunset_peak//004.jpg' alt='' width="30%" height="30%")
+    br
+    br
+    h4 Transport
+    table(style='width:70%')
+        tbody
+        tr
+          th Starting Point
+          th Route
+          th Duartion
+        tr
+          td Bus No. 11‧23 
+          td 
+              | Tung Chung - Various Destinations
+              br
+              |(Get Off :Pak Kung Au)
+          td 30 min 	
+        tr
+          td Bus No. 3M 	
+          td 
+              | Mui Wo - Tung Chung
+              br
+              |(Get Off : Pak Kung Au)
+          td 1 hour
+        tr
+          th End Point
+          th Route
+          th Duartion
+        tr
+          td Bus No. 1‧2 ‧3M
+          td 
+              | Various Destinations - Mui Wo
+              br
+              |(Get On : Nam Shan)
+          td 15 min 	
+        tr
+          td Bus No. 3M
+          td 
+              | Mui Wo - Tung Chung
+              br
+              |(Get On : Nam Shan)
+          td 30 min
+
+    p
+    |Route: 
+    br
+    | APak Kung Au --> Sunset Peak --> Lantau Mountain Camp -->
+    | Sheung Tung Au --> Nam Shan 
+    p
+    p(style="font-family:'Courier New'") Duration 3 hours
+    p(style="font-family:'Courier New'") Distance 6 km
+    p
+    |Exit: None
+    p
+    |Note: 
+    ul(style="font-family:'Courier New'")
+        li The trail involves some elevations and descends
+    p
+    |Summary: 
+    br
+    | The Yuen Chuen Ancient Trail runs through most parts of Tai Lam Country Park, with many small paths branching off the main route. 
+    | The first half of the trail offers better views, particularly the one overlooking the Tsing Ma Bridge spanning across Ma Wan Channel.
+    p
+    p(style="font-family:'Georgia'") Update Date: 03/01/2022

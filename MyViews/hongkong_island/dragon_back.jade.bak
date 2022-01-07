@@ -1,0 +1,75 @@
+extends .././layout
+ 
+block page-header
+    h1(style="font-family:'Times New Roman'") Dragon's back
+ 
+block content 
+    p 
+    a(href='/database') Database Home Page	
+    |  |   
+    a(href='/hongkong_island') Hong Kong Island
+    p 
+    img(src='image/hongkong_island/dragon_back/001.jpg' alt='' width="50%" height="50%")
+    p Dragon's Back, with a view overlooking Tathong Channel, was considered the “Best Urban Hike in Asia” by Time Magazine in 2004.
+    |The trail starts at To Tei Wan. Climb up the trail by the information board. Turn right at the pavilion. After arriving a large platform, follow along the ridge and then drop to a crossing. Head right and continue along a flat path.
+    |Join the concrete trail and descent to Tai Long Wan Village and finish at Tai Long Wan.
+    p 
+    img(src='image/hongkong_island/dragon_back/004.jpg' alt='' width="30%" height="30%")
+    img(src='image/hongkong_island/dragon_back/002.jpg' alt='' width="30%" height="30%")
+    img(src='image/hongkong_island/dragon_back/003.jpg' alt='' width="30%" height="30%")
+    br
+    br
+    h4 Transport
+    table(style='width:70%')
+        tbody
+        tr
+          th Starting Point
+          th Route
+          th Duartion
+        tr
+          td Bus No. 9
+          td 
+              | Shau Kei Wan - Shek O
+              br
+              |(Get Off : To Tei Wan)
+          td 20 min 	
+        tr
+          td Minibus 	
+          td 
+              | Shau Kei Wan - Shek O
+              br
+              |(Get Off : To Tei Wan)
+          td 15 min
+        tr
+          th End Point
+          th Route
+          th Duartion
+        tr
+          td(colspan='5')
+              center Same As Above
+    p
+    |Route: 
+    br
+    | Adventist Hospital --> Ha Fa Shan --> Shek Lung Kung -->
+    | Tin Fu Tsai --> Wing Kat Bridge --> Kat Hing Bridge -->
+    | Tai Tong Country Park --> Tai Tong Village
+    p
+    p(style="font-family:'Courier New'") Duration 5 hours
+    p(style="font-family:'Courier New'") Distance 13 km
+    p
+    |Exit: 
+    ul(style="font-family:'Courier New'")
+        li After passing Shek Lung Kung, there is a side path to the right, which leads to Tsuen Kam Au via MacLehose Trail Stage 9.
+        li After passing Tin Fu Tsai, you may exit to Sham Tseng via Tsing Fai Tong
+    p
+    |Note: 
+    ul(style="font-family:'Courier New'")
+        li Bring a map for there are a number of crossings
+        li This long distance trail requires a moderate level of physical fitness
+    p
+    |Summary: 
+    br
+    | The Yuen Chuen Ancient Trail runs through most parts of Tai Lam Country Park, with many small paths branching off the main route. 
+    | The first half of the trail offers better views, particularly the one overlooking the Tsing Ma Bridge spanning across Ma Wan Channel.
+    p
+    p(style="font-family:'Georgia'") Update Date: 02/01/2022

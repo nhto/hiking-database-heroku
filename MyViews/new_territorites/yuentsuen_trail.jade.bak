@@ -1,0 +1,89 @@
+extends ./layout
+ 
+block page-header
+    h1(style="font-family:'Times New Roman'") Yuen Tsuen Ancient Trail
+ 
+block content 
+    p 
+    a(href='/database') Database Home Page	
+    |  |   
+    a(href='/new_territories') New Territories
+    p 
+    img(src='image/home_page.jpg' alt='Yuen Tsuen Ancient Trail' width="50%" height="50%")
+    p Yuen Chuen Ancient Trail starts from Yuen Long to Tsuen Wan. This trail was major footpath used by villagers before and now is one of the popular trail in North-West New Territories.
+    |The trail begins at the staircase opposite Yan On Hospital. After reaching the catchwater, take the steps across the catchwater and climb up to Ha Fa Shan. 
+    |Follow the signposts and ascent to Shek Lung Kung. Continue on the paved path to the right and follow the signposts of the Ancient Trail. 
+    |After reaching the concrete road, turn left for a short distance. Then take the small path to the right (leaving the Ancient Trail) and head to the campground of Tin Fu Tsai.
+    |Join back the Ancient Trail at the main entrance of the campsite. From there, follow the Ancient Trail all the way to Tai Tong, where the trail joins Tai Tong Nature Trail. 
+    p 
+    img(src='image/new_territories/yuentsuen_ancient/001.jpg' alt='' width="30%" height="30%")
+    img(src='image/new_territories/yuentsuen_ancient/002.jpg' alt='' width="30%" height="30%")
+    img(src='image/new_territories/yuentsuen_ancient/003.jpg' alt='' width="30%" height="30%")
+    br
+    br
+    h4 Transport
+    table(style='width:70%')
+        tbody
+        tr
+          th Starting Point
+          th Route
+          th Duartion
+        tr
+          td Bus No. 39M
+          td 
+              | Tsuen Wan Railway Station - Allway Gardens 
+              br
+              |(Get Off : Tsuen Wan Adventist Hospital)
+          td 10 min 	
+        tr
+          td Bus No. 30X
+          td 
+              | Whampoa Garden - Allway Gardens
+              br
+              |(Get Off : Tsuen Wan Adventist Hospital)
+          td ---
+        tr
+          th End Point
+          th Route
+          th Duartion
+        tr
+          td Minibus
+          td 
+              | Tai Tong - Yuen Long
+              br
+              |(Get On : Kiu Hing Road)
+          td 20 min 	
+        tr
+          td Bus No. K66
+          td 
+              | Tai Tong - Long Ping
+              br
+              |(Get On : Kiu Hing Road)
+          td ---
+
+    p
+    |Route: 
+    br
+    | Adventist Hospital --> Ha Fa Shan --> Shek Lung Kung -->
+    | Tin Fu Tsai --> Wing Kat Bridge --> Kat Hing Bridge -->
+    | Tai Tong Country Park --> Tai Tong Village
+    p
+    p(style="font-family:'Courier New'") Duration 5 hours
+    p(style="font-family:'Courier New'") Distance 13 km
+    p
+    |Exit: 
+    ul(style="font-family:'Courier New'")
+        li After passing Shek Lung Kung, there is a side path to the right, which leads to Tsuen Kam Au via MacLehose Trail Stage 9.
+        li After passing Tin Fu Tsai, you may exit to Sham Tseng via Tsing Fai Tong
+    p
+    |Note: 
+    ul(style="font-family:'Courier New'")
+        li Bring a map for there are a number of crossings
+        li This long distance trail requires a moderate level of physical fitness
+    p
+    |Summary: 
+    br
+    | The Yuen Chuen Ancient Trail runs through most parts of Tai Lam Country Park, with many small paths branching off the main route. 
+    | The first half of the trail offers better views, particularly the one overlooking the Tsing Ma Bridge spanning across Ma Wan Channel.
+    br
+    p(style="font-family:'Georgia'") Update Date: 02/01/2022

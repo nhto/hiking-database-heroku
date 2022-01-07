@@ -1,0 +1,22 @@
+extends ./layout
+
+block page-title
+    |Home - Hiker
+    
+block page-header
+    h1 Hiking in Hong Kong Database
+ 
+block content
+    //img(src='https://www.w3schools.com/images/w3schools_green.jpg' alt='')
+    img(src='image/home_page.jpg' alt='Yuen Tsuen Ancient Trail' width="50%" height="50%")
+    p Yuen Tsuen Ancient Trail
+    br
+    p This website is create by To Nok Hang, Tommy using express js 
+    p 
+    | Press 
+    a(href='/about' onclick='aboutOnclick()') About	
+    | to get more information of this website
+    p 
+    | Press 
+    a(href='/database' onclick='databaseOnclick()') Database	
+    | to visit the hiking database of Hong Kong

@@ -1,0 +1,85 @@
+extends .././layout
+ 
+block page-header
+    h1(style="font-family:'Times New Roman'") Kowloon Peak
+ 
+block content 
+    p 
+    a(href='/database') Database Home Page	
+    |  |   
+    a(href='/kowloon') Kowloon
+    p 
+    img(src='image/kowloon/kowloon_peak/001.jpg' alt='' width="50%" height="50%")
+    p KowloonPeak offers four trails leading to the summit, ranging from easy to treacherous, for hikers of varied abilities to choose from.
+    |Set out at the crossing of Fei Ngo Shan Road and Clear Water Bay Road. Follow Fei Ngo Shan Road til seeing a "328" mark in red, which is the trailhead of the eastern path. 
+    |From there climb up to the top and then head right, crossing Middle Hill and walk downhill towards Tung Shan. Pass beneath the pylon and join the Fei Ngo Shan Road. 
+    |Turn left and continue on to Shatin Pass. Take the steps on the left and finally drop to Tsz Wan Kok.
+    p 
+    img(src='image/kowloon/kowloon_peak/004.jpg' alt='' width="30%" height="30%")
+    img(src='image/kowloon/kowloon_peak/002.jpg' alt='' width="30%" height="30%")
+    img(src='image/kowloon/kowloon_peak/003.jpg' alt='' width="30%" height="30%")
+    br
+    br
+    h4 Transport
+    table(style='width:70%')
+        tbody
+        tr
+          th Starting Point
+          th Route
+          th Duartion
+        tr
+          td Minibus No. 1
+          td 
+              | Telford Garden - Sai Kung
+              br
+              |(Get Off : Fei Ngo Shan Road)
+          td 15 min 	
+        tr
+          td Minibus No. 1A 
+          td 
+              | Rhythm Garden - Sai Kung
+              br
+              |(Get Off : Fei Ngo Shan Road)
+          td 20 min
+        tr
+          th End Point
+          th Route
+          th Duartion
+        tr
+          td Minibus 37A
+          td 
+              | Tsz Wan Shan Shopping Centre - Wong Tai Sin Railway Station
+              br
+              |(Get On : Tsz Wan Shan (North) Bus Terminus)
+          td ---	
+        tr
+          td Bus No. 2F‧3C‧3M‧3P‧15A 	
+          td 
+              | Tsz Wan Shan (North) - Various Destinations
+              br
+              |(Get On : Bus Terminal)
+          td ---
+
+    p
+    |Route: 
+    br
+    | Fei Ngo Shan Road --> Kowloon Peak  --> Middle Hill -->
+    | Tung Shan --> Shatin Pass --> Tsz Wan Kok
+    p
+    p(style="font-family:'Courier New'") Duration 2 hours
+    p(style="font-family:'Courier New'") Distance 7.5 km
+    p
+    |Exit: Take the side path towards Pak Fa Lam and return to Fei Ngo Shan Road via Pak Fa Lam Road
+    p
+    |Note: 
+    ul(style="font-family:'Courier New'")
+        li The trailhead of the path leading to the top is opposite to the footpath descending to Pak Fa Lam, not Pak Fa Lam Road
+        li Some paths are overgrown and beware of the cliffs
+        li The path descending from Middle Hill is gravelly and fairly steep
+    p
+    |Summary: 
+    br
+    | The eastern path leading up to Kowloon Peak is well-defined. The route offers a bird’s eye view over Sai Kung and you may be greeted with golden Chinese Silver Grass in autumn. 
+    | However, the top stands a TV Transmitting Station and the pylons are rather distracting.
+    p
+    p(style="font-family:'Georgia'") Update Date: 02/01/2022
