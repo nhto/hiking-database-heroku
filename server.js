@@ -96,7 +96,7 @@ app.get('/tai_tam', function (req, res) {
     res.render('hongkong_island/tai_tam');
 });
 
-var server = app.listen(3000, function () {
+var server = app.listen(process.env.PORT ||3000, function () {
     console.log('Node server is running..');
     console.log('Node.js web server at port 3000 is running..')
     console.log('visit http://127.0.0.1:3000 ')
