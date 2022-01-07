@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "ExpressjsApplication",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "engines": {
     "node": "14.17.1"
   },
