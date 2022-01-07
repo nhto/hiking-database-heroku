@@ -24,6 +24,17 @@ else{
 	}
 }
 
+document.getElementById("top button").addEventListener("click", homeOnclick);
+document.getElementById("home button").addEventListener("click", homeOnclick);
+document.getElementById("about button").addEventListener("click", aboutOnclick);
+document.getElementById("database button").addEventListener("click", databaseOnclick);
+
+if(document.getElementById("home page about button"))
+	document.getElementById("home page about button").addEventListener("click", aboutOnclick);
+
+if(document.getElementById("home page database button"))
+	document.getElementById("home page database button").addEventListener("click", databaseOnclick);
+
 function homeOnclick(){
 	console.log("home button is onclick");
 	sessionStorage.buttontype = 'home';

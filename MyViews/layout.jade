@@ -48,17 +48,17 @@ html.h-100(lang='en')
       // Fixed navbar
       nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
         .container-fluid
-          a.navbar-brand(href='/' onclick='homeOnclick()') Hiking database - Hiker
+          a.navbar-brand(href='/' id='top button') Hiking database - Hiker
           button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
             span.navbar-toggler-icon
           #navbarCollapse.collapse.navbar-collapse
             ul.navbar-nav.me-auto.mb-2.mb-md-0
-              li.nav-item(onclick='homeOnclick()')
-                a.nav-link(aria-current='page' href='/') Home
-              li.nav-item(onclick='aboutOnclick()')
-                a.nav-link(href='/about') About
-              li.nav-item(onclick='databaseOnclick()')
-                a.nav-link(href='/database') Database
+              li.nav-item
+                a.nav-link(aria-current='page' href='/' id='home button') Home
+              li.nav-item
+                a.nav-link(href='/about' id='about button') About
+              li.nav-item
+                a.nav-link(href='/database' id='database button') Database
               li.nav-item(hidden='')
                 a.nav-link.disabled Disabled
               //li 
