@@ -70,7 +70,6 @@ function searchOnclick(){
 }
 
 function startSearch(){
-	sessionStorage.buttontype = 'database';
 	let district = document.getElementById("district");
 	let difficu = document.getElementById("difficu");
 	console.log(district.options[district.selectedIndex].value);

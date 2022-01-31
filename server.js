@@ -20,6 +20,10 @@ app.get('/database', function (req, res) {
     res.render('database');
 });
 
+app.get('/search', function (req, res) {
+    res.render('search');
+});
+
 app.get('/hongkong_island', function (req, res) {
     res.render('hongkong_island');
 });

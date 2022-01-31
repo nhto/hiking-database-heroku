@@ -1,9 +1,11 @@
 var express = require("express");
+var helmet = require('helmet');
 var app = express();
 
 app.set("view engine", "jade")
 app.set("views", "MyViews")
 
+app.use(helmet());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
@@ -82,7 +84,19 @@ app.get('/dragon_back', function (req, res) {
     res.render('hongkong_island/dragon_back');
 });
 
-var server = app.listen(3000, function () {
+app.get('/peak', function (req, res) {
+    res.render('hongkong_island/peak');
+});
+
+app.get('/high_west', function (req, res) {
+    res.render('hongkong_island/high_west');
+});
+
+app.get('/tai_tam', function (req, res) {
+    res.render('hongkong_island/tai_tam');
+});
+
+var server = app.listen(process.env.PORT ||3000, function () {
     console.log('Node server is running..');
     console.log('Node.js web server at port 3000 is running..')
     console.log('visit http://127.0.0.1:3000 ')
