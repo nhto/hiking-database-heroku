@@ -8,21 +8,24 @@ block page-header
  
 block content
     p This is a testing function to search the hiking routes in database.
-    label(for='district') District: 
-    select#district
-        option(value='HKisland') Hong Kong Island
-        option(value='NewTerr') New Territories
-        option(value='Kowloon') Kowloon
-        option(value='Lantau') Lantau Island
     p
-    label(for='difficu') Difficulty: 
-    select#difficu
-        option(value='onestar') 1 Star
-        option(value='twostar') 2 Stars
-        option(value='threestar') 3 Stars
-        option(value='fourstar') 4 Stars	
-    p
-    input(type='submit' value='Search' id='go search button')
+        label(for='dist') District: 
+        select.district(name='district' id ='district')
+            option(value='ALL') All
+            option(value='HKisland') Hong Kong Island
+            option(value='NewTerr') New Territories
+            option(value='Kowloon') Kowloon
+            option(value='Lantau') Lantau Island
+        p
+        label(for='diff') Difficulty: 
+        select.difficu(name='difficu' id ='difficu')
+            option(value='ALL') All
+            option(value='onestar') 1 Star
+            option(value='twostar') 2 Stars
+            option(value='threestar') 3 Stars
+            option(value='fourstar') 4 Stars	
+        p
+        input(type='submit' value='Search' id='go search button')
     p#result 
-    img(src='image/about_page.jpg' alt='' width="60%" height="60%")
-    p MacLehose Trail Section 8
+    img(src='image/serach_page.JPG' alt='' width="60%" height="60%")
+    p Plover Cove Reservoir
