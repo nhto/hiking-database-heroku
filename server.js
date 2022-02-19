@@ -1,6 +1,8 @@
 var express = require("express");
 var helmet = require('helmet');
 var app = express();
+//var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost:27017/hikedata';
 
 app.set("view engine", "jade")
 app.set("views", "MyViews")
@@ -18,6 +20,10 @@ app.get('/about', function (req, res) {
 
 app.get('/database', function (req, res) {
     res.render('database');
+});
+
+app.get('/search', function (req, res) {
+    res.render('search');
 });
 
 app.get('/hongkong_island', function (req, res) {
@@ -101,3 +107,18 @@ var server = app.listen(process.env.PORT ||3000, function () {
     console.log('Node.js web server at port 3000 is running..')
     console.log('visit http://127.0.0.1:3000 ')
 });
+/*
+var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost:27017/hikedata';
+MongoClient.connect(url, function (err, db) {
+    if (err) throw err;
+    console.log('database connected');
+    var dbase = db.db("hikedata");
+   dbase.collection("hikedata"). find({'difficulty': '3 stars'}.toArray(function(err,result) {
+        if (err) throw err;
+        console.log(result);
+		console.log(result[0].name);
+        db.close();
+    });
+});*/
+

@@ -1,9 +1,13 @@
 var express = require("express");
+var helmet = require('helmet');
 var app = express();
+//var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost:27017/hikedata';
 
 app.set("view engine", "jade")
 app.set("views", "MyViews")
 
+app.use(helmet());
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
@@ -16,6 +20,10 @@ app.get('/about', function (req, res) {
 
 app.get('/database', function (req, res) {
     res.render('database');
+});
+
+app.get('/search', function (req, res) {
+    res.render('search');
 });
 
 app.get('/hongkong_island', function (req, res) {
@@ -82,8 +90,57 @@ app.get('/dragon_back', function (req, res) {
     res.render('hongkong_island/dragon_back');
 });
 
-var server = app.listen(3000, function () {
+app.get('/peak', function (req, res) {
+    res.render('hongkong_island/peak');
+});
+
+app.get('/high_west', function (req, res) {
+    res.render('hongkong_island/high_west');
+});
+
+app.get('/tai_tam', function (req, res) {
+    res.render('hongkong_island/tai_tam');
+});
+/*
+app.post('/submit-search-data', function (req, res) {
+   // var name = req.body.district+ ' ' + req.body.district;
+	console.log(req.body);
+	console.log("function is called");
+    //res.send(' Submitted Successfully!');
+	MongoClient.connect(url, function (err, db) {
+    if (err) throw err;
+    console.log('database connected');
+    var dbase = db.db("hikedata");
+    dbase.collection("hikedata"). find({'difficulty': '3 stars').toArray(function(err,result) {
+        if (err) throw err;
+        console.log(result);
+		console.log(result[0].name);
+        //db.close();
+    });
+	});
+	
+	res.redirect('http://127.0.0.1:3000/search');
+	//console.log(document.getElementById("result"));
+	//startSearch();
+});
+*/
+var server = app.listen(process.env.PORT ||3000, function () {
     console.log('Node server is running..');
     console.log('Node.js web server at port 3000 is running..')
     console.log('visit http://127.0.0.1:3000 ')
 });
+/*
+var MongoClient = require('mongodb').MongoClient;
+var url = 'mongodb://localhost:27017/hikedata';
+MongoClient.connect(url, function (err, db) {
+    if (err) throw err;
+    console.log('database connected');
+    var dbase = db.db("hikedata");
+   dbase.collection("hikedata"). find({'difficulty': '3 stars'}.toArray(function(err,result) {
+        if (err) throw err;
+        console.log(result);
+		console.log(result[0].name);
+        db.close();
+    });
+});*/
+
